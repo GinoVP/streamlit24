@@ -32,3 +32,9 @@ d = st.date_input(
  "Fecha de cumpleaños",
  datetime.date(2019, 7, 6))
 st.write('Tu cumpleños es:', d)
+
+start_time = st.slider(
+ "Ver casos ocurridos en",
+ value=datetime(2020, 1, 1, 9, 30),
+ format="DD/MM/YY - hh:mm")
+st.write("Fecha seleccionada:", start_time)
