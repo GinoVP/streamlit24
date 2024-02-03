@@ -17,8 +17,8 @@ chart_data = pd.DataFrame(np.random.randn(n),columns=['ventas'])
 
 st.line_chart(chart_data)
 
-d = st.date_input(
- "Fecha de cumpleaños",
- datetime.date(2023, 7, 6))
-st.write('Tu cumpleños es:', d)
 
+option = st.selectbox(
+ '¿Cómo desearía ser contactado/a?',
+ ('Email', 'Teléfono', 'Whatsapp'))
+st.write('Seleccionó:', option)
