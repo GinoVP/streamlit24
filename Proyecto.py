@@ -34,4 +34,4 @@ st.write('Tu cumpleños es:', d)
 option = st.selectbox(
  '¿Cómo desearía ser contactado/a?',
  ('Email', 'Teléfono', 'Whatsapp'))
-st.write('Seleccionó:', option
+st.write('Seleccionó:', option)
