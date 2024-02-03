@@ -27,5 +27,5 @@ st.write("Fecha seleccionada:", start_time)
 #Creando Calendario
 d = st.date_input(
  "Fecha de cumpleaños",
- datetime.date(2019, 7, 6))
+ dt.date(2019, 7, 6))
 st.write('Tu cumpleños es:', d)
