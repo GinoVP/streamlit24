@@ -30,14 +30,3 @@ start_time = st.slider(
  format="DD/MM/YY - hh:mm")
 st.write("Fecha seleccionada:", start_time)
 
-#Streamlit: Ingreso de fecha con calendario
-d = st.date_input(
- "Fecha de cumpleaños",
- datetime.date(2019, 7, 6))
-st.write('Tu cumpleños es:', d)
-
-#Streamlit: Lista de selección
-option = st.selectbox(
- '¿Cómo desearía ser contactado/a?',
- ('Email', 'Teléfono', 'Whatsapp'))
-st.write('Seleccionó:', option)
