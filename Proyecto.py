@@ -17,10 +17,27 @@ chart_data = pd.DataFrame(np.random.randn(n),columns=['ventas'])
 
 st.line_chart(chart_data)
 
-
-
-
+# Streamlit: Slider de horario
 appointment = st.slider(
  "Programe la asesoria:",
  value=(time(11, 30), time(12, 45)))
 st.write("Esta agendado para:", appointment)
+
+# Streamlit: Slider de fecha
+start_time = st.slider(
+ "Ver casos ocurridos en",
+ value=datetime(2020, 1, 1, 9, 30),
+ format="DD/MM/YY - hh:mm")
+st.write("Fecha seleccionada:", start_time)
+
+#Streamlit: Ingreso de fecha con calendario
+d = st.date_input(
+ "Fecha de cumpleaños",
+ datetime.date(2019, 7, 6))
+st.write('Tu cumpleños es:', d)
+
+#Streamlit: Lista de selección
+option = st.selectbox(
+ '¿Cómo desearía ser contactado/a?',
+ ('Email', 'Teléfono', 'Whatsapp'))
+st.write('Seleccionó:', option)
