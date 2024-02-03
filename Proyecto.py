@@ -39,3 +39,10 @@ st.write('Seleccionó:', option)
 n = st.slider("n", 5,100, step=1)
 chart_data = pd.DataFrame(np.random.randn(n),columns=['data'])
 st.line_chart(chart_data)
+
+#Creando un botón para limpiar filtros
+if st.button('Limpiar filtros'):
+    # Restablecer los valores de los filtros a su estado predeterminado
+    start_time = datetime(2020, 1, 1, 9, 30)
+    d = dt.date(2019, 7, 6)
+    option = 'Email'
