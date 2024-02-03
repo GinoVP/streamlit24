@@ -19,6 +19,6 @@ st.line_chart(chart_data)
 
 d = st.date_input(
  "Fecha de cumpleaños",
- datetime.date(2019, 7, 6))
+ datetime.date(2023, 7, 6))
 st.write('Tu cumpleños es:', d)
 
