@@ -6,6 +6,8 @@ import numpy as np
 
 from datetime import datetime
 
+import datetime
+
 #Ingresando Titulo
 st.title('UPC Data Science 2024')
 
