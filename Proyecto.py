@@ -6,6 +6,7 @@ import numpy as np
 
 from datetime import time
 
+import datetime
 
 st.title('UPC Data Science 2024')
 
@@ -26,5 +27,5 @@ st.write('Seleccionó:', option)
 
 d = st.date_input(
  "Fecha de cumpleaños",
- time.date(2019, 7, 6))
+ datetime.date(2019, 7, 6))
 st.write('Tu cumpleños es:', d)
