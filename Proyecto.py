@@ -18,6 +18,9 @@ chart_data = pd.DataFrame(np.random.randn(n),columns=['ventas'])
 
 st.line_chart(chart_data)
 
+n = st.slider("n", 5,100, step=1)
+chart_data = pd.DataFrame(np.random.randn(n),columns=['data'])
+st.line_chart(chart_data)
 
 option = st.selectbox(
  '¿Cómo desearía ser contactado/a?',
